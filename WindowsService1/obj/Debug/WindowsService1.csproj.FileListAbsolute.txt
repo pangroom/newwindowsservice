@@ -1,0 +1,9 @@
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\bin\Debug\WindowsService1.exe.config
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\bin\Debug\WindowsService1.exe
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\bin\Debug\WindowsService1.pdb
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\obj\Debug\WindowsService1.csprojResolveAssemblyReference.cache
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\obj\Debug\WindowsService1.ProjectInstaller.resources
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\obj\Debug\WindowsService1.csproj.GenerateResource.cache
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\obj\Debug\WindowsService1.csproj.CoreCompileInputs.cache
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\obj\Debug\WindowsService1.exe
+E:\项目文件\MyWindowsService\WindowsService1\WindowsService1\obj\Debug\WindowsService1.pdb
