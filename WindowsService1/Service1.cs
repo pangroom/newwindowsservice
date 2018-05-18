@@ -7,7 +7,10 @@ using System.IO;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
-
+using WindowsService1.MySQL.BLL;
+/// <summary>
+/// 参考网址：https://www.cnblogs.com/xujie/p/5695673.html
+/// </summary>
 namespace WindowsService1
 {
     public partial class Service1 : ServiceBase
@@ -17,19 +20,24 @@ namespace WindowsService1
             InitializeComponent();
             System.Timers.Timer timer = new System.Timers.Timer();
             timer.Elapsed += new System.Timers.ElapsedEventHandler(TimedEvent);
-            timer.Interval = 5000;//每5s执行一次。
+            timer.Interval = 5000;//每5秒执行一次
+            timer.AutoReset = true;
             timer.Enabled = true;
+            timer.Start();
+
         }
 
-        public void TimedEvent(object sender,System.Timers.ElapsedEventArgs e)
+        private void TimedEvent(object sender, System.Timers.ElapsedEventArgs e)
         {
             //业务逻辑代码
+            List<string> list = (List<string>)new Ana_BLL().GetPumproom();
+            this.WriteLog(list.Count.ToString());
         }
 
         protected override void OnStart(string[] args)
         {
             this.WriteLog("我的windows服务启动了");
-            
+
         }
 
         protected override void OnStop()

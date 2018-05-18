@@ -1,0 +1,21 @@
+﻿正在安装程序集“F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.exe
+   logfile = F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.InstallLog
+正在安装服务 我的windows服务...
+已成功安装服务 我的windows服务。
+正在日志 Application 中创建 EventLog 源 我的windows服务...
+正在提交程序集“F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.exe
+   logfile = F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.InstallLog
+正在卸载程序集“F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.exe”。
+受影响的参数是:
+   logtoconsole = 
+   assemblypath = F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.exe
+   logfile = F:\git仓库\newwindowsservice\WindowsService1\bin\Debug\WindowsService1.InstallLog
+正在移除 EventLog 源 我的windows服务。
+正在从系统中移除服务 我的windows服务...
+已成功地从系统中移除服务 我的windows服务。
