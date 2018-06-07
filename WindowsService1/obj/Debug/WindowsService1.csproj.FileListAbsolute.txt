@@ -17,3 +17,4 @@ F:\git仓库\newwindowsservice\WindowsService1\obj\Debug\WindowsService1.csproj.
 F:\git仓库\newwindowsservice\WindowsService1\obj\Debug\WindowsService1.csproj.CopyComplete
 F:\git仓库\newwindowsservice\WindowsService1\obj\Debug\WindowsService1.exe
 F:\git仓库\newwindowsservice\WindowsService1\obj\Debug\WindowsService1.pdb
+F:\git仓库\newwindowsservice\WindowsService1\obj\Debug\WindowsService1.csprojResolveAssemblyReference.cache

@@ -15,12 +15,13 @@ namespace WindowsService1
 {
     public partial class Service1 : ServiceBase
     {
+        System.Timers.Timer timer = new System.Timers.Timer();
         public Service1()
         {
             InitializeComponent();
-            System.Timers.Timer timer = new System.Timers.Timer();
+            
             timer.Elapsed += new System.Timers.ElapsedEventHandler(TimedEvent);
-            timer.Interval = 5000;//每5秒执行一次
+            timer.Interval = 30000;//每30秒执行一次
             timer.AutoReset = true;
             timer.Enabled = true;
             timer.Start();
@@ -30,8 +31,23 @@ namespace WindowsService1
         private void TimedEvent(object sender, System.Timers.ElapsedEventArgs e)
         {
             //业务逻辑代码
-            List<string> list = (List<string>)new Ana_BLL().GetPumproom();
-            this.WriteLog(list.Count.ToString());
+            //List<string> list = (List<string>)new Ana_BLL().GetPumproom();
+            
+            try
+            {
+                new Ana_BLL().CircleDetect();
+                this.WriteLog("ok");
+                
+
+            }
+            catch(Exception ex)
+            {
+                this.WriteLog(ex.ToString());
+                timer.Stop();
+
+            }
+            
+
         }
 
         protected override void OnStart(string[] args)
